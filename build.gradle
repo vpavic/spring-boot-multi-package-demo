@@ -1,0 +1,44 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.0.M1'
+	}
+
+	repositories {
+		maven { url 'https://plugins.gradle.org/m2/' }
+		maven { url 'https://repo.spring.io/snapshot/' }
+		maven { url 'https://repo.spring.io/milestone/' }
+	}
+
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+	}
+}
+
+apply plugin: 'base'
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'io.spring.dependency-management'
+
+	dependencyManagement {
+		imports {
+			mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
+		}
+
+		dependencies {
+			dependency 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
+		}
+	}
+
+	sourceCompatibility = 1.8
+
+	repositories {
+		jcenter()
+		maven { url 'https://repo.spring.io/snapshot/' }
+		maven { url 'https://repo.spring.io/milestone/' }
+	}
+}
+
+configure(subprojects.findAll { it.name.matches 'demo-package-.+' }) {
+	apply plugin: 'org.springframework.boot'
+}

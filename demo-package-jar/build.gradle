@@ -1,0 +1,11 @@
+dependencies {
+	compile project(':demo-core')
+}
+
+bootJar {
+	mainClass = 'sample.SpringBootMultiPackageDemoApplication'
+
+	launchScript {
+		included = true
+	}
+}

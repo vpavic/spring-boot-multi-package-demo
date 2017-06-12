@@ -1,0 +1,17 @@
+### Gradle
+.gradle
+build
+
+### Eclipse/STS
+.classpath
+.project
+.settings
+.springBeans
+bin
+
+### IDEA
+*.iml
+*.ipr
+*.iws
+.idea
+out

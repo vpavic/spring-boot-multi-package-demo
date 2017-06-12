@@ -1,0 +1,11 @@
+apply plugin: 'war'
+
+dependencies {
+	compile project(':demo-core')
+	compile 'org.webjars:webjars-locator-jboss-vfs'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+bootWar {
+	mainClass = 'sample.SpringBootMultiPackageDemoApplication'
+}

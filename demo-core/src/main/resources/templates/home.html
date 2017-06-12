@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Spring Boot multi-package demo</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+	<style>
+		body {
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" th:href="@{'/'}">Spring Boot multi-package demo</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#" th:href="@{'/'}">Home</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="starter-template">
+		<h1>Spring Boot multi-package demo</h1>
+		<p class="lead">A demo Spring Boot project to demonstrate packaging for multiple platforms.</p>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js" th:src="@{/webjars/bootstrap/bootstrap.min.js}"></script>
+</body>
+</html>

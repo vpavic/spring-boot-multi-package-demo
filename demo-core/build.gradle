@@ -1,0 +1,9 @@
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+
+	compile 'org.webjars:bootstrap:3.3.7-1'
+	compile 'org.webjars:webjars-locator'
+
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+}

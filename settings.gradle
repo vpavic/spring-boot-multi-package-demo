@@ -1,0 +1,6 @@
+rootProject.name = 'spring-boot-multi-package-demo'
+
+include 'demo-core'
+include 'demo-package-jar'
+include 'demo-package-war'
+include 'demo-package-war-wildfly'
