@@ -18,6 +18,12 @@ subprojects {
 	apply plugin: 'java'
 	apply plugin: 'io.spring.dependency-management'
 
+	sourceCompatibility = 1.8
+
+	repositories {
+		jcenter()
+	}
+
 	dependencyManagement {
 		imports {
 			mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
@@ -26,12 +32,6 @@ subprojects {
 		dependencies {
 			dependency 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
 		}
-	}
-
-	sourceCompatibility = 1.8
-
-	repositories {
-		jcenter()
 	}
 }
 
