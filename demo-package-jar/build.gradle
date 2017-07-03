@@ -3,7 +3,7 @@ dependencies {
 }
 
 bootJar {
-	mainClass = 'sample.SpringBootMultiPackageDemoApplication'
+	mainClass = 'demo.DemoApplication'
 
 	launchScript {
 		included = true
