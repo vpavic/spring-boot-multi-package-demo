@@ -14,7 +14,7 @@ The proposed solution demonstrated by this project is based on splitting the pro
  - `demo-package-war`: builds a traditional WAR archive for deployment in e.g. Tomcat and TomEE.
  - `demo-package-war-wildfy`: builds a WildFly specific WAR archive
 
-The important part is that the `demo-core` module should not have Spring Boot’s Gradle Plugin applied but rather only Dependency Management Plugin accompanyed by import of Spring Boot's BOM (this happens automatically if Boot’s Gradle Plugin is applied):
+The important part is that the `demo-core` module should not have Spring Boot’s Gradle plugin applied but rather only [Dependency management plugin](https://github.com/spring-gradle-plugins/dependency-management-plugin) accompanyed by import of Spring Boot's BOM (this happens automatically if Boot’s Gradle Plugin is applied):
 
 ```gradle
 subprojects {
