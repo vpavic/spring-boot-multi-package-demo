@@ -2,10 +2,7 @@ dependencies {
 	compile project(':demo-core')
 }
 
-bootJar {
+bootRepackage {
 	mainClass = 'demo.DemoApplication'
-
-	launchScript {
-		included = true
-	}
+	executable = true
 }
