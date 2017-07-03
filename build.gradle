@@ -28,10 +28,6 @@ subprojects {
 		imports {
 			mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
 		}
-
-		dependencies {
-			dependency 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
-		}
 	}
 }
 

@@ -2,7 +2,7 @@ apply plugin: 'war'
 
 dependencies {
 	compile project(':demo-core')
-	compile 'org.webjars:webjars-locator-jboss-vfs'
+	compile 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
