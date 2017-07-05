@@ -12,8 +12,6 @@ buildscript {
 	}
 }
 
-apply plugin: 'base'
-
 subprojects {
 	apply plugin: 'java'
 	apply plugin: 'io.spring.dependency-management'
@@ -29,8 +27,4 @@ subprojects {
 			mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
 		}
 	}
-}
-
-configure(subprojects.findAll { it.name.matches 'demo-package-.+' }) {
-	apply plugin: 'org.springframework.boot'
 }
