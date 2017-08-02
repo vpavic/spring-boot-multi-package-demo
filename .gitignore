@@ -1,17 +1,17 @@
-### Gradle
-.gradle
-build
+# Gradle
+.gradle/
+build/
 
-### Eclipse/STS
+# IntelliJ IDEA
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+bin/
 .classpath
 .project
 .settings
 .springBeans
-bin
-
-### IDEA
-*.iml
-*.ipr
-*.iws
-.idea
-out
