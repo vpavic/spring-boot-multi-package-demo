@@ -33,4 +33,4 @@ subprojects {
 
 _Package_ modules then simply depend on `demo-core` module and apply the specific configuration (such as `war` plugin) and specific dependencies (such as `webjars-locator-jboss-vfs` from introduction).
 
-The resulting build (executed using `./gradlew build`) then generates 3 deployment artifact.
+The resulting build (executed using `./gradlew build`) then generates 3 deployment artifacts.
