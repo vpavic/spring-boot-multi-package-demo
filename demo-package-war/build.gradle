@@ -6,6 +6,6 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
-bootRepackage {
-	mainClass = 'demo.DemoApplication'
+bootWar {
+	mainClassName = 'demo.DemoApplication'
 }
