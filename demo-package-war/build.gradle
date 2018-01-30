@@ -3,6 +3,7 @@ apply plugin: 'org.springframework.boot'
 
 dependencies {
 	compile project(':demo-core')
+
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 

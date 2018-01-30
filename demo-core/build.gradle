@@ -1,7 +1,12 @@
+configurations.all {
+	exclude module: 'spring-boot-starter-tomcat'
+}
+
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	compile 'org.springframework.boot:spring-boot-starter-web'
 
+	compile 'javax.servlet:javax.servlet-api'
 	compile 'org.webjars:bootstrap:3.3.7-1'
 	compile 'org.webjars:webjars-locator'
 
