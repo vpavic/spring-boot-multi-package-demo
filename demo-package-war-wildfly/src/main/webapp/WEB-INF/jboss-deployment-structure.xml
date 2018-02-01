@@ -6,7 +6,6 @@
 			<module name="org.apache.log4j"/>
 			<module name="org.jboss.logging"/>
 			<module name="org.slf4j"/>
-			<module name="org.slf4j.impl"/>
 		</exclusions>
 	</deployment>
 </jboss-deployment-structure>
