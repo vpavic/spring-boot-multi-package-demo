@@ -17,6 +17,7 @@ subprojects {
 	apply plugin: 'java'
 	apply plugin: 'io.spring.dependency-management'
 
+	group = 'io.github.vpavic'
 	sourceCompatibility = 1.8
 
 	repositories {
