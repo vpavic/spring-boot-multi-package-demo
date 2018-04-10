@@ -6,7 +6,6 @@ dependencies {
 	runtime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
-bootRepackage {
+springBoot {
 	mainClass = 'demo.DemoApplication'
-	executable = true
 }

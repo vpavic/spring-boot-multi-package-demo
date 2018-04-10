@@ -34,7 +34,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>demo.DemoApplication</mainClass>
-					<executable>true</executable>
 				</configuration>
 			</plugin>
 		</plugins>
