@@ -1,7 +1,9 @@
-apply plugin: 'war'
+plugins {
+	id 'war'
+}
 
 dependencies {
-	compile project(':demo-core')
+	implementation project(':demo-core')
 
-	compile 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
+	implementation 'org.webjars:webjars-locator-jboss-vfs:0.1.0'
 }
