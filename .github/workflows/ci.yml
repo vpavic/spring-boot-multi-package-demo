@@ -11,3 +11,5 @@ jobs:
           java-version: 11
       - run: chmod +x gradlew
       - run: ./gradlew check --stacktrace
+      - run: chmod +x mvnw
+      - run: ./mvnw verify
